@@ -47,6 +47,11 @@ html,body{
     color: rgba(255, 255, 255, 0.95);
 }
 
+.nav .menu{
+    display: none;
+    position: absolute;
+}
+
 .nav .right{
     position: absolute;
     right: 5vw;
@@ -98,6 +103,7 @@ html,body{
 .content{
     height: calc(100vh - 9vh);
     width: 100vw;
+    height: auto;
     position: relative;
 }
 
@@ -232,5 +238,87 @@ html,body{
 
     .content .bottom .box{
         font-size: 1.25vw;
+    }
+}
+
+@media (max-width: 500px){
+    .nav .left p{
+        display: none;
+    }
+
+    .nav .right button{
+        font-size: 4vw;
+        padding: 1.5vw 8vw;
+    }
+
+    .nav .menu{
+        display: block;
+        font-size: 10vw;
+        left: 5vw;
+        cursor: pointer;
+    }
+
+    .content{
+        top: 15vw;
+    }
+
+    .content .top{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content .top .topleft{
+        margin-left: 0;
+        width: 100vw;
+        padding: 0 3.5vw;
+        align-items: center;
+    }
+
+    .content .top .topleft p{
+        font-size: 15vw;
+        line-height: 1.2;
+    }
+
+    .content .top .topleft button{
+        font-size: 5vw;
+        padding: 3vw 12vw;
+        margin-top: 10vw;
+    }
+
+    .content .top .topright{
+        flex-direction: row;
+        width: 100vw;
+        height: 35vw;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+    }
+
+    .content .top i{
+        font-size: 10vw;
+        padding: 3vw 0;
+    }
+
+    .content .bottom{
+        flex-direction: column;
+    }
+
+    .content .bottomleft{
+        padding: 0;
+        width: 70vw;
+        height: 8vw;
+
+    }
+
+    .content .bottomright{
+        flex-direction: column;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .content .box{
+        width: 30vw;
+        height: 30vw;
     }
 }
