@@ -30,5 +30,5 @@ const navbarDropdown = () =>{
     })
 }
 
-// navbarDropdown();
+navbarDropdown();
 responsiveNavbar();
