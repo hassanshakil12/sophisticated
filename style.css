@@ -39,7 +39,6 @@ html,body{
     font-size: 10vw;
     text-align: left;
     padding: 20vw 15vw;
-    display: none;
     transform: translateX(-100%);
     opacity: 0;
     transition: all ease 0.3s;
