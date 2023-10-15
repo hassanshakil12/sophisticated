@@ -242,6 +242,21 @@ html,body{
 }
 
 @media (max-width: 500px){
+    .main::-webkit-scrollbar{
+        width: 1vh;
+    }
+
+    .main::-webkit-scrollbar-thumb{
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 50px;
+        padding: 5vw 0;
+    }
+
+    .main{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
     .nav .left p{
         display: none;
     }
@@ -315,10 +330,21 @@ html,body{
         flex-direction: column;
         width: 100vw;
         height: 100%;
+        gap: 25px;
+        padding: 6vw 0vw;
     }
 
     .content .box{
-        width: 30vw;
-        height: 30vw;
+        width: 50vw;
+        height: 50vw;
+        padding: 17vw 7vw;
+    }
+
+    .box h6{
+        font-size: 9vw;
+    }
+
+    .box p{
+        font-size: 5vw;
     }
 }
